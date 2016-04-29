@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StudyRecords</string>
+
+
+    <string name="login_warring">账号：admin \n密码：admin</string>
+    <string name="login_loginBtn">登录</string>
+    <string name="login_name">账号：</string>
+    <string name="login_pwd">密码：</string>
+</resources>

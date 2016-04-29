@@ -1,1 +1,1 @@
-include ':app_mvp'
+include ':app_mvp', ':rxstudy'

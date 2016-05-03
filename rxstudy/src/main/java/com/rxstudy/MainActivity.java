@@ -9,6 +9,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.rxstudy.data.Data;
+
+import java.util.ArrayList;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import rx.Observable;
@@ -33,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private Observable<Integer> mObservable;
     private StringBuilder mStringBuilder;
     private Toast mToast;
+    private ArrayList<Data> mDatas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
         mStringBuilder = new StringBuilder();
         createObserver();
         createObservable();
+
+        initData();
 
         mainBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +65,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void initData() {
+        mDatas = new ArrayList<>();
+        Data<Integer> tempData0 = new Data<Integer>(0);
+        Data<String> tempData1 = new Data<String>("String");
+    }
+
     // 1.创建观察者Observer
     private void createObserver() {
         mObserver = new Observer<Integer>() {
@@ -65,8 +78,8 @@ public class MainActivity extends AppCompatActivity {
             public void onCompleted() {
                 Log.d(TAG, "onCompleted()");
                 mainTxt.setText(mStringBuilder.append("onCompleted").toString());
-                mToast.makeText(MainActivity.this,
-                        "这是运行在UIMain线程的，继续点击NEXT", Toast.LENGTH_LONG).show();
+                mToast.makeText(MainActivity.this, "这是运行在UIMain线程的，继续点击NEXT",
+                        Toast.LENGTH_LONG).show();
                 mainBtnNext.setVisibility(View.VISIBLE);
                 finish();
             }

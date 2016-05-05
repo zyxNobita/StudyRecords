@@ -1,4 +1,4 @@
-package com.rxstudy.data;
+package com.other.generic;
 
 /**
  * Created by Administrator on 2016/4/29.

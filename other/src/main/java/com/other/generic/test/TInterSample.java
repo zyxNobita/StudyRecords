@@ -1,6 +1,6 @@
-package com.rxstudy.data.test;
+package com.other.generic.test;
 
-import com.rxstudy.data.AnimalGeneator;
+import com.other.generic.AnimalGeneator;
 
 /**
  * Created by Administrator on 2016/5/3.

@@ -1,4 +1,4 @@
-package com.rxstudy.data;
+package com.other.generic;
 
 import java.util.Random;
 

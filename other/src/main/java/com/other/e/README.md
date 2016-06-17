@@ -1,4 +1,4 @@
-1 背景
+**1 背景**
 
 在java语言中还没有引入枚举类型之前，表示枚举类型的常用模式是声明一组具有int常量。之前我们通常利用public final static 方法定义的代码如下，分别用1 表示春天，2表示夏天，3表示秋天，4表示冬天。
 ```javascript
@@ -44,7 +44,7 @@ private String getChineseSeason(int season){
 
 接下来我们来考虑一下这种模式的可读性。使用枚举的大多数场合，我都需要方便得到枚举类型的字符串表达式。如果将int枚举常量打印出来，我们所见到的就是一组数字，这是没什么太大的用处。我们可能会想到使用String常量代替int常量。虽然它为这些常量提供了可打印的字符串，但是它会导致性能问题，因为它依赖于字符串的比较操作，所以这种模式也是我们不期望的。 从类型安全性和程序可读性两方面考虑，int和String枚举模式的缺点就显露出来了。幸运的是，从Java1.5发行版本开始，就提出了另一种可以替代的解决方案，可以避免int和String枚举模式的缺点，并提供了许多额外的好处。那就是枚举类型（enum type）。接下来的章节将介绍枚举类型的定义、特征、应用场景和优缺点。
 
-2 定义
+**2 定义**
 
 枚举类型（enum type）是指由一组固定的常量组成合法的类型。Java中由关键字enum来定义一个枚举类型。下面就是java枚举类型的定义。
 
@@ -53,7 +53,7 @@ public enum Season {
     SPRING, SUMMER, AUTUMN, WINER;
 }
 ```
-3 特点
+**3 特点**
 
 Java定义枚举类型的语句很简约。它有以下特点：
 
@@ -63,7 +63,7 @@ Java定义枚举类型的语句很简约。它有以下特点：
 
 5) 枚举可以实现一个或多个接口（Interface） 6) 可以定义新的变量 7) 可以定义新的方法 8) 可以定义根据具体枚举值而相异的类
 
-4 应用场景
+**4 应用场景**
 
 以在背景中提到的类型安全为例，用枚举类型重写那段代码。代码如下：
 
@@ -126,19 +126,19 @@ public class UseSeason {
 
 这里有一个问题，为什么我要将域添加到枚举类型中呢？目的是想将数据与它的常量关联起来。如1代表春天，2代表夏天。
 
-5 总结
+**5 总结**
 
 那么什么时候应该使用枚举呢？每当需要一组固定的常量的时候，如一周的天数、一年四季等。或者是在我们编译前就知道其包含的所有值的集合。Java 1.5的枚举能满足绝大部分程序员的要求的，它的简明，易用的特点是很突出的。
 
-6 用法
+**6 用法**
 
-用法一：常量
+_用法一_：常量
 ```javascript
 public enum Color {  
   RED, GREEN, BLANK, YELLOW  
 }  
 ```
-用法二：switch
+_用法二_：switch
 ```javascript
 enum Signal {  
     GREEN, YELLOW, RED  
@@ -161,7 +161,7 @@ public class TrafficLight {
     }  
 }  
 ```
-用法三：向枚举中添加新方法
+_用法三_：向枚举中添加新方法
 ```javascript
 public enum Color {  
     RED("红色", 1), GREEN("绿色", 2), BLANK("白色", 3), YELLO("黄色", 4);  
@@ -197,7 +197,7 @@ public enum Color {
     }  
 }  
 ```
-用法四：覆盖枚举的方法
+_用法四_：覆盖枚举的方法
 ```javascript
 public enum Color {  
     RED("红色", 1), GREEN("绿色", 2), BLANK("白色", 3), YELLO("黄色", 4);  
@@ -216,7 +216,7 @@ public enum Color {
     }  
 }  
 ```
-用法五：实现接口
+_用法五_：实现接口
 ```javascript
 public interface Behaviour {  
     void print();  
@@ -244,7 +244,7 @@ public enum Color implements Behaviour{
     }  
 }  
 ```
-用法六：使用接口组织枚举
+_用法六_：使用接口组织枚举
 ```javascript
 public interface Food {  
     enum Coffee implements Food{  

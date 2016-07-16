@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.rxstudy.data.Data;
-
 import java.util.ArrayList;
 
 import butterknife.Bind;

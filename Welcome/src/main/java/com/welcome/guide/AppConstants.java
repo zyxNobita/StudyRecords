@@ -1,4 +1,4 @@
-package com;
+package com.welcome.guide;
 
 /**
  * Created by ZQiang94 on 16/1/23.

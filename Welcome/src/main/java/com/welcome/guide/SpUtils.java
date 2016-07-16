@@ -1,4 +1,4 @@
-package com;
+package com.welcome.guide;
 
 import android.content.Context;
 import android.content.SharedPreferences;

@@ -1,4 +1,4 @@
-package com;
+package com.welcome.guide;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,6 +11,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import com.MainActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -79,7 +81,7 @@ public class WelcomeGuideActivity extends Activity implements OnClickListener {
     protected void onPause() {
         super.onPause();
         // 如果切换到后台，就设置下次不进入功能引导页
-        SpUtils.putBoolean(WelcomeGuideActivity.this, AppConstants.FIRST_OPEN, true);
+//        SpUtils.putBoolean(WelcomeGuideActivity.this, AppConstants.FIRST_OPEN, true);
         finish();
     }
 
@@ -152,7 +154,7 @@ public class WelcomeGuideActivity extends Activity implements OnClickListener {
 
     private void enterMainActivity() {
         Intent intent = new Intent(WelcomeGuideActivity.this,
-                SplashActivity.class);
+                MainActivity.class);
         startActivity(intent);
         SpUtils.putBoolean(WelcomeGuideActivity.this, AppConstants.FIRST_OPEN, true);
         finish();

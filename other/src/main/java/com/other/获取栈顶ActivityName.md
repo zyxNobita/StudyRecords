@@ -1,20 +1,7 @@
-package com.other;
+#### [应用中获取栈中最顶层的Activity Name]()
 
-import android.app.ActivityManager;
-import android.os.Build;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-
-import java.util.List;
-
-public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+Android 5.0版本前后获取topActivity有所不同，在代码中可以根据不同版本获取使用不同的方式获取topActivity。
+```javascript
         String packname = ""; /* Android5.0之后获取程序锁的方式是不一样的*/
         String activityname = "";
         if (Build.VERSION.SDK_INT > 20) {
@@ -38,4 +25,11 @@ public class MainActivity extends AppCompatActivity {
         Log.e("packname:", packname.toString());
         Log.e("activityname:", activityname.toString());
     }
-}
+```
+除此之外还要加上GET_TASKS的权限
+```javascript
+<uses-permission android:name = "android.permission.GET_TASKS"/>
+```
+
+参考：
+##### [应用锁之获取栈顶Activity](http://www.jianshu.com/p/eb531b2d1d8e)

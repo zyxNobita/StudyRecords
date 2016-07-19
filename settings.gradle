@@ -1,1 +1,1 @@
-include ':app_mvp', ':rxstudy', ':other', ':netmodule', ':myretrofit', ':Welcome'
+include ':app_mvp', ':other', ':netmodule', ':myretrofit', ':Welcome'

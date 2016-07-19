@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">RxStudy</string>
-
-    <string name="mainBtn">Click</string>
-    <string name="hello_rxjava">hello RxJava</string>
-    <string name="mainNext">Next</string>
-</resources>

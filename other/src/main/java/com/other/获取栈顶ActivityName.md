@@ -1,4 +1,4 @@
-#### [应用中获取栈中最顶层的Activity Name]()
+#### [应用中获取栈中最顶层的Activity Name](https://github.com/ZQiang94/StudyRecords/blob/master/other/src/main/java/com/other/%E8%8E%B7%E5%8F%96%E6%A0%88%E9%A1%B6ActivityName.md)
 
 Android 5.0版本前后获取topActivity有所不同，在代码中可以根据不同版本获取使用不同的方式获取topActivity。
 ```javascript

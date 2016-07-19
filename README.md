@@ -7,3 +7,4 @@ Android related knowledge points learning records
 ###### 2016-06-17 [java中枚举的使用场景以及用法介绍](https://github.com/ZQiang94/StudyRecords/blob/master/other/src/main/java/com/other/e/README.md)
 ###### 2016-07-13 [java中Builder链式编程用法介绍](https://github.com/ZQiang94/StudyRecords/blob/master/other/src/main/java/com/other/builder/README.md)
 ###### 2016-07-16 添加welcome Module包含启动页+广告（右上角圆圈倒计时）+引导页
+###### 2016-07-19 添加获取topactivity的README文件

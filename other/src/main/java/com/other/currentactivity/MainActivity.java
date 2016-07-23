@@ -1,10 +1,12 @@
-package com.other;
+package com.other.currentactivity;
 
 import android.app.ActivityManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+
+import com.other.R;
 
 import java.util.List;
 

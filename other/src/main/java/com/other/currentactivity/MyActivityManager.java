@@ -19,7 +19,7 @@ public class MyActivityManager {
     private MyActivityManager() {
     }
 
-    public MyActivityManager getInstance() {
+    public static MyActivityManager getInstance() {
         return sInstance;
     }
 

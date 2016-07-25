@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <ImageView
-        android:id="@+id/iv_splash"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:adjustViewBounds="true"
-        android:contentDescription="@null"
-        android:scaleType="centerCrop"
-        android:src="@mipmap/pic_startpage" />
-</LinearLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/splashRLayout"
+                xmlns:RoundProgressBar="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/pic_startpage"
+                android:orientation="vertical">
+
+
+    <com.welcome.ad.RoundProgressBar
+        android:id="@+id/roundProgressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        RoundProgressBar:roundColor="#a4a2a2"
+        RoundProgressBar:roundProgressColor="#ffffff"
+        RoundProgressBar:roundWidth="6dip"
+        RoundProgressBar:showText1="跳过"
+        RoundProgressBar:textColor="#ffffff"
+        RoundProgressBar:textIsDisplayable="true"
+        RoundProgressBar:textSize="14sp"/>
+
+</RelativeLayout>

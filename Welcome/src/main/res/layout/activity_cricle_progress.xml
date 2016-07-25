@@ -58,7 +58,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:text="Button" />
+        android:text="reset" />
 
     <com.circle.RoundProgressBar
         android:id="@+id/roundProgressBar1"

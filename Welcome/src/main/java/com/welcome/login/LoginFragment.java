@@ -7,7 +7,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import wechatedit.com.myapplication.R;
 
 /**
@@ -15,9 +18,21 @@ import wechatedit.com.myapplication.R;
  */
 public class LoginFragment extends Fragment {
 
+    @Bind(R.id.loginBtn)
+    Button mLoginBtn;
     private boolean isQueckLogon = false; //默认普通登录
     private Context mContext;
     private View mView;
+
+    public LoginFragment(boolean isQueckLogon) {
+        this.isQueckLogon = isQueckLogon;
+    }
+
+    public static LoginFragment newInstance(boolean isQueckLogon) {
+        LoginFragment newFragment = new LoginFragment(isQueckLogon);
+        return newFragment;
+    }
+
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -29,9 +44,22 @@ public class LoginFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_login, container, false);
-        
+//        ButterKnife.bind(this, mView);
+        mLoginBtn = (Button) mView.findViewById(R.id.loginBtn);
+
+        if (isQueckLogon){
+            mLoginBtn.setText("Login true");
+        }else{
+            mLoginBtn.setText("Login false");
+        }
 
         return mView;
 
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        ButterKnife.unbind(this);
     }
 }

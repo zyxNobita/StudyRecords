@@ -31,6 +31,11 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
 
+        LoginFragment loginFragment1 = LoginFragment.newInstance(true);
+        LoginFragment loginFragment2 = LoginFragment.newInstance(false);
+        fragments.add(loginFragment1);
+        fragments.add(loginFragment2);
+
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
         ViewPager mViewPager = (ViewPager) findViewById(R.id.loginVP);
-        ColumnHorizontalScrollView title = (ColumnHorizontalScrollView) findViewById(R.id.title);
+        ColumnHorizontalScrollView title = (ColumnHorizontalScrollView) findViewById(R.id.loginTitle);
         mViewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public int getCount() {
@@ -58,4 +63,5 @@ public class LoginActivity extends AppCompatActivity {
         title.setspace(40);
         title.setViewPager(mViewPager);  //这个是将ViewPager对象给自定义的View
     }
+
 }

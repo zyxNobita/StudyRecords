@@ -19,7 +19,8 @@
         <activity android:name="com.MainActivity"/>
         <activity android:name="com.welcome.ad.AdActivity">
         </activity>
-        <activity android:name="com.welcome.login.LoginActivity">
+        <activity android:name="com.welcome.login.LoginActivity"
+            >
         </activity>
     </application>
 

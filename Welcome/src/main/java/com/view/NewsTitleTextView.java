@@ -19,7 +19,7 @@ public class NewsTitleTextView extends TextView {
     private boolean isVerticalLine = false;
     private boolean isHorizontaline = false;
     private int verticalLineColor = Color.LTGRAY;
-    private int horizontalineColor = getResources().getColor(R.color.colorAccent);
+    private int horizontalineColor = getResources().getColor(R.color.horizontaLine);
     private float screenDensity;
 
     public NewsTitleTextView(Context context) {
@@ -51,7 +51,7 @@ public class NewsTitleTextView extends TextView {
 
     /**
      * 设置控件底部是否需要横线
-     * 
+     *
      * @param is
      */
     public void setIsHorizontaline(boolean is) {
@@ -61,7 +61,7 @@ public class NewsTitleTextView extends TextView {
 
     /**
      * 设置控件左边是否需要竖线
-     * 
+     *
      * @param is
      */
     public void setIsVerticalLine(boolean is) {
@@ -70,9 +70,8 @@ public class NewsTitleTextView extends TextView {
 
     /**
      * 设置横线颜色
-     * 
-     * @param color
-     *            颜色资源
+     *
+     * @param color 颜色资源
      */
     public void setHorizontalineColor(int color) {
         this.horizontalineColor = color;
@@ -80,9 +79,8 @@ public class NewsTitleTextView extends TextView {
 
     /**
      * 设置数显颜色
-     * 
-     * @param color
-     *            颜色资源
+     *
+     * @param color 颜色资源
      */
     public void setVerticalLineColor(int color) {
         this.verticalLineColor = color;
@@ -92,18 +90,20 @@ public class NewsTitleTextView extends TextView {
     protected void dispatchDraw(Canvas canvas) {
         super.dispatchDraw(canvas);
         Paint paint;
+        int itemWidth = (int) getPaint().measureText(getText().toString());
+        float left = (getWidth() - itemWidth) / 2;
+        float right = getWidth() - left;
         if (isVerticalLine) {
             paint = new Paint();
             paint.setColor(verticalLineColor);
             paint.setStyle(Style.FILL);
-            canvas.drawRect(0, 14, 1 * screenDensity, this.getHeight() - 14,
-                    paint);
+            canvas.drawRect(0, 14, 1 * screenDensity, this.getHeight() - 14, paint);
         }
         if (isHorizontaline) {
             paint = new Paint();
             paint.setColor(horizontalineColor);
             paint.setStyle(Style.FILL);
-            canvas.drawRect(5, getHeight() - 6, getWidth() * screenDensity,
+            canvas.drawRect(left, getHeight() - 4, right,
                     getHeight() * screenDensity, paint);
         }
 

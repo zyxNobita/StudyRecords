@@ -1,16 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="vertical"
-              android:paddingBottom="30dp"
-              android:paddingTop="15dp"
-              app:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@android:color/white"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="30dp"
+                android:paddingTop="15dp"
+                app:orientation="vertical">
 
-    <LinearLayout
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_selector"
+        android:text="登录"
+        android:textColor="@android:color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/ll_registfornew"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/bt_login"
+        android:layout_alignRight="@id/bt_login"
+        android:layout_below="@id/bt_login"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/wangjimima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码？"/>
+
+        <TextView
+            android:id="@+id/tv_registfornew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="立即注册"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/tv_registfornew"
+            android:layout_toStartOf="@+id/tv_registfornew"
+            android:text="还没有号码？"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/loginButtomtop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_registfornew"
+        android:layout_marginTop="45dp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -23,10 +72,10 @@
 
 
         <TextView
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="还可以选择一下几种方式登录"/>
-
 
         <TextView
             android:layout_width="0dp"
@@ -40,6 +89,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/loginButtomtop"
         android:layout_marginTop="15dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
@@ -70,4 +120,4 @@
     </LinearLayout>
 
 
-</LinearLayout>
+</RelativeLayout>

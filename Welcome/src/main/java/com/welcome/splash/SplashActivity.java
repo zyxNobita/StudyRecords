@@ -49,7 +49,8 @@ public class SplashActivity extends Activity implements SplashManager.SplashInf 
 
     private void enterNextActivity() {
         Intent intent;
-        if (SpUtils.getBoolean(this, AppConstants.FIRST_OPEN, true)) {
+        boolean flag = SpUtils.getBoolean(this, AppConstants.FIRST_OPEN, true);
+        if (flag) {
             intent = new Intent(this, WelcomeGuideActivity.class);
         } else {
             intent = new Intent(this, LoginActivity.class);

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
@@ -17,34 +16,43 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_weight="1">
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:orientation="vertical">
 
-        <com.view.ColumnHorizontalScrollView
-            android:id="@+id/loginTitle"
+        <HorizontalScrollView
+            android:id="@+id/h_scroll_view"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/viewgroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:orientation="horizontal">
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="1dp"
+            android:background="#e4e4e4"/>
 
         <android.support.v4.view.ViewPager
             android:id="@+id/loginVP"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
-
     <include
         layout="@layout/login_buttom_layout"/>
-
-
-    <Button
-        android:id="@+id/loginBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reset"
-        android:visibility="gone"/>
-
 
 </LinearLayout>

@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.welcome.login.LoginActivity;
+import com.module.login.LoginActivity;
 
 import java.util.ArrayList;
 import java.util.List;

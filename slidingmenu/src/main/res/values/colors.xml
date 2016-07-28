@@ -3,10 +3,4 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-
-    <color name="selectedTxt">#000000</color>
-    <color name="unSelectedTxt">#848484</color>
-    <color name="horizontaLine">#1072e2</color>
-
-    <color name="bgGray">#f4f2f2</color>
 </resources>

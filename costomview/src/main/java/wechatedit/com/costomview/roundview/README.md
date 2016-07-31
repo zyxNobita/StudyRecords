@@ -1,27 +1,13 @@
-package wechatedit.com.costomview.roundview;
+#### [广告页右上角的“跳过”按钮]()
 
-import android.content.Context;
-import android.content.res.TypedArray;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.RectF;
-import android.graphics.Typeface;
-import android.util.AttributeSet;
-import android.view.View;
+效果图：
+<video src="" 
+width="320" height="240" controls="controls">
+</video>
 
-import wechatedit.com.costomview.R;
-
-
-/**
- * 广告页右上角的跳过按钮
- *
- * @author ZQiang94
- */
+1.创建回调接口
+```javascript
 public class RoundProgressBar extends View {
-    /**
-     * 画笔对象的引用
-     */
     private Paint paint;
 
     /**
@@ -228,3 +214,4 @@ public class RoundProgressBar extends View {
     }
 
 }
+```

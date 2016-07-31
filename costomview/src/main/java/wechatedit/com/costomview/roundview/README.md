@@ -1,9 +1,8 @@
 #### 广告页右上角的“跳过”按钮
 
 效果图：
-<video src="http://lxqncdn.miaopai.com/stream/BvmaXK2X49guVi4ehlOjjQ__.mp4" 
-width="320" height="240" controls="controls">
-</video>
+<img src="https://github.com/ZQiang94/StudyRecords/blob/master/costomview/src/main/res/mipmap-xxxhdpi/custom_view_roundbar_01.png">
+<img src="https://github.com/ZQiang94/StudyRecords/blob/master/costomview/src/main/res/mipmap-xxxhdpi/custom_view_roundbar_00.png">
 
 1.创建回调接口
 ```javascript
@@ -262,5 +261,21 @@ public class RoundProgressBar extends View {
         app:textSize="18sp"/>
 
 </android.support.constraint.ConstraintLayout>
+```
+
+最后是在代码中使用该控件：
+```javascript
+    @butterknife.Bind(R.id.roundbar)
+    RoundProgressBar roundbar;
+    
+     roundbar.start();
+
+     roundbar.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View view) {
+             roundbar.stop();
+             Toast.makeText(MainActivity.this, "This button is clicked.", Toast.LENGTH_SHORT).show();
+         }
+     });
 ```
 

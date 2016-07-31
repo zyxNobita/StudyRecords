@@ -1,1 +1,1 @@
-include ':app_mvp', ':other', ':netmodule', ':myretrofit', ':Welcome', ':slidingmenu'
+include ':app_mvp', ':other', ':netmodule', ':myretrofit', ':Welcome', ':slidingmenu', ':costomview'

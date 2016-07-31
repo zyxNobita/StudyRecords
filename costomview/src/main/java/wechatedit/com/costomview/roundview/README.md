@@ -1,13 +1,17 @@
-#### [广告页右上角的“跳过”按钮]()
+#### 广告页右上角的“跳过”按钮
 
 效果图：
-<video src="" 
+<video src="http://lxqncdn.miaopai.com/stream/BvmaXK2X49guVi4ehlOjjQ__.mp4" 
 width="320" height="240" controls="controls">
 </video>
 
 1.创建回调接口
 ```javascript
+具体的自定义view
 public class RoundProgressBar extends View {
+    /**
+     * 画笔对象的引用
+     */
     private Paint paint;
 
     /**
@@ -215,3 +219,48 @@ public class RoundProgressBar extends View {
 
 }
 ```
+
+自定义属性
+```javascript
+<declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="text" format="string"/>
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+```
+在布局文件中使用
+```javascript
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wechatedit.com.costomview.MainActivity">
+
+    <wechatedit.com.costomview.roundview.RoundProgressBar
+        android:id="@+id/roundbar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        app:layout_constraintRight_toRightOf="@+id/activity_main"
+        app:layout_constraintTop_toTopOf="@+id/activity_main"
+        app:text="跳过"
+        app:textSize="18sp"/>
+
+</android.support.constraint.ConstraintLayout>
+```
+

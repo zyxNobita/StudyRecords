@@ -8,13 +8,13 @@ import android.support.v4.view.ViewPager;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.MainActivity;
 import com.base.BaseActivity;
 import com.module.login.enums.LoginType;
 import com.module.login.impl.LoginManager;
@@ -62,7 +62,6 @@ public class LoginActivity extends BaseActivity implements LoginCommons.LoginUiA
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
         mLoginManager = new LoginManager(this);
@@ -141,7 +140,8 @@ public class LoginActivity extends BaseActivity implements LoginCommons.LoginUiA
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mLoginManager.login();
+                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+//                mLoginManager.login();
             }
         });
 

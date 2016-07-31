@@ -8,13 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
     <declare-styleable name="RoundProgressBar">
         <attr name="roundColor" format="color"/>
         <attr name="roundProgressColor" format="color"/>
         <attr name="roundWidth" format="dimension"></attr>
         <attr name="textColor" format="color"/>
         <attr name="textSize" format="dimension"/>
-        <attr name="showText1" format="string"/>
+        <attr name="text" format="string"/>
         <attr name="max" format="integer"></attr>
         <attr name="textIsDisplayable" format="boolean"></attr>
         <attr name="style">
@@ -22,21 +23,5 @@
             <enum name="FILL" value="1"></enum>
         </attr>
     </declare-styleable>
-
-    <declare-styleable name="CircleImageView">
-        <attr name="civ_border_width" format="dimension"/>
-        <attr name="civ_border_color" format="color"/>
-        <attr name="civ_border_overlay" format="boolean"/>
-        <attr name="civ_fill_color" format="color"/>
-    </declare-styleable>
-
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
-
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
 </resources>

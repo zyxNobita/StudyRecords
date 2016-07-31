@@ -1,6 +1,7 @@
 package com.module.login.impl;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
@@ -8,6 +9,7 @@ import android.widget.FrameLayout;
 import com.module.login.LoginFragment;
 import com.module.login.enums.LoginType;
 import com.module.login.interfaces.LoginCommons;
+import com.module.sliding.Main2Activity;
 import com.utils.TelNumMatch;
 import com.view.NewsTitleTextView;
 
@@ -56,6 +58,7 @@ public class LoginManager implements LoginCommons.ILoginManager {
             //TODO 执行登录接口
             mUiAction.showTips("TODO 执行登录接口");
             mUiAction.showLoading();
+            mContext.startActivity(new Intent(mContext, Main2Activity.class));
         }
     }
 

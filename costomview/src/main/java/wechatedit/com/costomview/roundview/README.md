@@ -1,8 +1,8 @@
 #### 广告页右上角的“跳过”按钮
 
 效果图：
+<img src="https://github.com/ZQiang94/StudyRecords/blob/master/costomview/src/main/res/mipmap-xxxhdpi/costom_view_roundbar_00.png">
 <img src="https://github.com/ZQiang94/StudyRecords/blob/master/costomview/src/main/res/mipmap-xxxhdpi/custom_view_roundbar_01.png">
-<img src="https://github.com/ZQiang94/StudyRecords/blob/master/costomview/src/main/res/mipmap-xxxhdpi/custom_view_roundbar_00.png">
 
 1.创建回调接口
 ```javascript

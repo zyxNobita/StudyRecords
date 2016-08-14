@@ -1,9 +1,10 @@
 #### 广告页右上角的“跳过”按钮
 
 效果图：
-####效果图:<br>![WeChatID](https://github.com/ddwhan0123/GitFlexibleListView/blob/master/FlexibleListView/coco1.gif "效果图")
+####效果图:<br>![WeChatID](https://github.com/ZQiang94/StudyRecords/blob/master/costomview/src/main/res/mipmap-xhdpi/gif_00.gif"效果图")
 
-1.创建回调接口
+一、“跳过”按钮
+1.创建自定义View
 ```javascript
 具体的自定义view
 public class RoundProgressBar extends View {
@@ -278,3 +279,71 @@ public class RoundProgressBar extends View {
      });
 ```
 
+二、“圆形图片”进度条  基本同“跳过”按钮
+1.自定义属性
+```javascript
+ <!--圆形Img进度条-->
+    <declare-styleable name="AroundCircleView">
+        <attr name="edgeColor" format="color"/>
+        <attr name="edgeSize" format="dimension"/>
+        <attr name="edgeBgColor" format="color"/>
+    </declare-styleable>
+```
+
+2.自定义View[点击查看](https://github.com/ZQiang94/StudyRecords/blob/master/costomview/src/main/java/wechatedit/com/costomview/roundview/AroundCircleView.java)
+
+3.布局文中使用[查看具体代码](https://github.com/ZQiang94/StudyRecords/blob/master/costomview/src/main/res/layout/activity_main.xml)
+```javascript
+<wechatedit.com.costomview.roundview.AroundCircleView
+        android:id="@+id/acv_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/github"
+        app:edgeBgColor="@color/withe"
+        app:edgeColor="#9cff0000"
+        app:edgeSize="8dp"/>
+```
+4.代码中使用[具体代码](https://github.com/ZQiang94/StudyRecords/blob/master/costomview/src/main/java/wechatedit/com/costomview/MainActivity.java)
+```javascript
+ //----------圆形图片进度条 初始化----------
+    @butterknife.Bind(R.id.acv_icon)
+    AroundCircleView acvIcon;
+    private int progress;
+    private boolean falg = true;
+    Handler weakHandler = new Handler(new Handler.Callback() {
+        @Override
+        public boolean handleMessage(Message msg) {
+
+            if (msg.what == 1) {
+                acvIcon.setProgress(progress);
+            }
+            if (progress == 100) {
+                Toast.makeText(MainActivity.this, "end", Toast.LENGTH_SHORT).show();
+            }
+            return false;
+        }
+    });
+
+
+//start 开启
+ private void startImgProgressBar() {
+        progress = 0;
+        acvIcon.setProgress(progress);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (falg && progress <= 100) {
+                    SystemClock.sleep(100);
+                    progress += 1;
+                    weakHandler.sendEmptyMessage(1);
+                    if (progress > 100) {
+                        weakHandler.sendEmptyMessage(2);
+                    }
+                }
+            }
+        }).start();
+
+    }
+
+```

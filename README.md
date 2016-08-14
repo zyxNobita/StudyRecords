@@ -14,4 +14,4 @@ Android related knowledge points learning records
 ###### 2016-07-20 [[转]国内一线公司的面试题目](https://github.com/ZQiang94/StudyRecords/blob/master/other/src/main/java/com/other/README_%E5%9B%BD%E5%86%85%E4%B8%80%E7%BA%BF%E5%85%AC%E5%8F%B8%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE.md)
 ###### 2016-07-23 [添加获取topactivity的README文件](https://github.com/ZQiang94/StudyRecords/blob/master/other/src/main/java/com/other/currentactivity/%E8%8E%B7%E5%8F%96%E6%A0%88%E9%A1%B6ActivityName.md)
 ###### 2016-07-31 [广告页右上角的“跳过”按钮](https://github.com/ZQiang94/StudyRecords/blob/master/costomview/src/main/java/wechatedit/com/costomview/roundview/README.md)
-
+###### 2016-08-13 [Android git ignore file](https://github.com/github/gitignore/blob/master/Android.gitignore)

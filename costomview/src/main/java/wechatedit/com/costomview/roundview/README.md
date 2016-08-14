@@ -1,7 +1,7 @@
 #### 广告页右上角的“跳过”按钮
 
 效果图：
-####效果图:<br>![WeChatID](https://github.com/ZQiang94/StudyRecords/blob/master/costomview/src/main/res/mipmap-xhdpi/gif_00.gif"效果图")
+####效果图:<br>![效果图](https://github.com/ZQiang94/StudyRecords/blob/master/costomview/src/main/res/mipmap-xhdpi/gif_00.gif "效果图")
 
 一、“跳过”按钮
 1.创建自定义View

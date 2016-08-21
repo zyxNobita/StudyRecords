@@ -18,3 +18,4 @@ Android related knowledge points learning records
 ###### 2016-08-14 [圆形进度条，中间为img](https://github.com/ZQiang94/StudyRecords/blob/master/costomview/src/main/java/wechatedit/com/costomview/roundview/README.md)<br>![效果图](https://github.com/ZQiang94/StudyRecords/blob/master/costomview/src/main/res/mipmap-xhdpi/gif_00.gif "效果图")
 ###### 2016-08-14 [Github 使用秘籍(内有github使用的一些有趣的小技巧)](http://www.kancloud.cn/thinkphp/github-tips/37873)
 ###### 2016-08-14 [##github 表情符:joy:](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
+###### 2016-08-21 [DisplayInfo获取当前设备屏幕的尺寸信息](https://github.com/ZQiang94/DisplayInfo)

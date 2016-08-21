@@ -112,13 +112,13 @@ adb logcat  -s EXAMPLE
 ```javascript
 adb logcat "*:W"
 ```
-#####V - Verbose (最低)
-#####D - Debug
-#####I - Info
-#####W - Warning
-#####E - Error
-#####F - Fatal
-#####S - Silent (最高, 使用这个级别将什么也不会打印)
+######V - Verbose (最低)
+######D - Debug
+######I - Info
+######W - Warning
+######E - Error
+######F - Fatal
+######S - Silent (最高, 使用这个级别将什么也不会打印)
 
 
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--圆形Img进度条-->
+    <declare-styleable name="AroundCircleView">
+        <attr name="edgeColor" format="color"/>
+        <attr name="edgeSize" format="dimension"/>
+        <attr name="edgeBgColor" format="color"/>
+    </declare-styleable>
+
+</resources>

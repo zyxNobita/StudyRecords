@@ -1,3 +1,4 @@
+[原文链接](http://mp.weixin.qq.com/s?__biz=MjM5OTA1MDUyMA==&mid=2655436960&idx=1&sn=dc865e1006bb07b5ff81a18f28f778e5&chksm=bd730cd78a0485c1f466cb791e78cde41601621df8f834c7e142b2ea3c928db9834635bc6e4e&scene=0#wechat_redirect)
 什么是 SQL 注入速查表？
 
 SQL注入速查表是可以为你提供关于不同种类 SQL注入漏洞 的详细信息的一个资源。这份速查表对于经验丰富的渗透测试人员，或者刚开始接触 Web应用安全 的初学者，都是一份很好的参考资料。

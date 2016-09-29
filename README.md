@@ -1,7 +1,5 @@
 # StudyRecords
 
-[**TODO**](https://github.com/ZQiang94/StudyRecords/blob/master/TODO.md)
-
 Android related knowledge points learning records
 ###### 2016-04-30 [添加mvp模式，使用登录场景模拟](http://blog.csdn.net/lmj623565791/article/details/46596109)
 ###### 2016-05-03 添加RxJava简单使用，未完待续
@@ -20,3 +18,4 @@ Android related knowledge points learning records
 ###### 2016-08-14 [##github 表情符:joy:](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
 ###### 2016-08-21 [DisplayInfo获取当前设备屏幕的尺寸信息](https://github.com/ZQiang94/DisplayInfo)
 ###### 2016-08-21 [adb命令行的基本使用](https://github.com/ZQiang94/StudyRecords/blob/master/other/src/main/java/com/other/adb%20%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95.md)
+###### 2016-09-28 [SQL注入速查表](https://github.com/ZQiang94/StudyRecords/blob/master/SQL.md)

@@ -1,3 +1,6 @@
+使用Ionic框架开发移动web app
+* * *
+###理清相互之间的关系与概念
 ####ionic
 ionic是一个用来开发混合手机应用的，开源的，免费的代码库。专注于用Web开发技术，基于H5创建类似与手机平台原生应用的开发框架，绑定了AJ(Angular JS)和Sass。
 这个框架的目的是从web的角度开发手机应用，基于PhoneGap的编译平台，可以实现编译各个应用平台的应用程序。
@@ -18,7 +21,7 @@ hybrid app指的是介于native app与web app之间的app，Native App良好用�
 hybrid app中既有原生SDK的实现，又有Html的嵌套；移动端web app采用全部为Html，CSS与JS等语言来实现的客户端，就是移动端的Web App。
 ####native app
 native app就是彻头彻尾的原生SDK开发的应用，例如Android应用是采用Java语言基于Android SDK来开发，IOS采用oc或swift在苹果API的基础上进行的开发。
-
+* * *
 ####采用ionic框架开发移动端web app的环境搭建
 #####安装jdk，且配置环境变量
 #####install node js

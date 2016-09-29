@@ -23,19 +23,19 @@ hybrid app中既有原生SDK的实现，又有Html的嵌套；移动端web app�
 native app就是彻头彻尾的原生SDK开发的应用，例如Android应用是采用Java语言基于Android SDK来开发，IOS采用oc或swift在苹果API的基础上进行的开发。
 * * *
 ####采用ionic框架开发移动端web app的环境搭建
-#####安装jdk，且配置环境变量
-#####install node js
+#####1.安装jdk，且配置环境变量
+#####2.install node js
 下载安装，并输入node -v验证是否安装成功。
-#####install cordova
+#####3.install cordova
 ```javascript
 npm install -g cordova
 ```
-#####install ionic
+#####4.install ionic
 ```javascript
 npm install -g ionic
 ```
-#####创建Hello World验证是否安装完成
+#####5.创建Hello World验证是否安装完成
 ```javascript
 ionic start myApp blank
 ```
-#####安装sdk并编译（Gradle）
+#####6.安装sdk并编译（Gradle）

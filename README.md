@@ -19,3 +19,4 @@ Android related knowledge points learning records
 ###### 2016-08-21 [DisplayInfo获取当前设备屏幕的尺寸信息](https://github.com/ZQiang94/DisplayInfo)
 ###### 2016-08-21 [adb命令行的基本使用](https://github.com/ZQiang94/StudyRecords/blob/master/other/src/main/java/com/other/adb%20%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95.md)
 ###### 2016-09-28 [SQL注入速查表](https://github.com/ZQiang94/StudyRecords/blob/master/SQL.md)
+###### 2016-11-04 [空包签名命令行](https://github.com/ZQiang94/StudyRecords/blob/master/other/src/main/java/com/other/%E7%A9%BA%E5%8C%85%E7%AD%BE%E5%90%8D.MD)
